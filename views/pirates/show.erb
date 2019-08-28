@@ -1,7 +1,26 @@
 <h1>Display your Pirate here</h1>
-
-
+<ul>
+    Pirate: <%= @all_pirates[0].name %>
+    Weight: <%= @all_pirates[0].weight %>
+    Height: <%= @all_pirates[0].height %>
+</ul>
 <h2>Display your first ship here</h2>
-
+<ul>
+    Ship1_name: <%= Ship.all[0].name %>
+    Ship1_type: <%= Ship.all[0].type %>
+    Ship1_booty: <%= Ship.all[0].booty %>
+</ul>
 
 <h2>Display your second ship here</h2>
+<ul>
+    Ship2_name: <%= Ship.all[1].name %>
+    # binding.pry
+    Ship2_type: <%= Ship.all[1].type %>
+    Ship2_booty: <%= Ship.all[1].booty %>
+</ul>
+
+<p>
+  <a href="/pirate/new">
+    Add a new pirate and ships
+  </a>
+</p>
